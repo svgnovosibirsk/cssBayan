@@ -7,7 +7,6 @@ html, body {
 .main {
     background: rgb(80, 74, 237);
     align-items: center;
-
 }
 
 .wrapper {
@@ -26,20 +25,21 @@ html, body {
     border-bottom: 1px solid black;
 }
 
+.item:hover > .image-wrapper {
+    display: block;
+}
+
 .text-button-wrapper {
     display: flex;
     justify-content: space-between;
 }
 
-.item:hover > .image-wrapper {
-    display: block;
+.text-button-wrapper:hover > .cross {
+    transform: rotate(45deg);
 }
 
 .cross {
     margin-top: 20px;
-}
-
-.cross {
     width: 20px;
     height: 20px;
 }
@@ -51,6 +51,17 @@ html, body {
 .image {
     width: 200px;
     height: 200px;
+    transition: width 0.5s;
+}
+
+.image:hover {
+    width: 250px;
+    height: 250px;
+}
+
+.image:active {
+    width: 300px;
+    height: 300px;
 }
 
 @media (max-width: 820px) {
@@ -72,5 +83,20 @@ html, body {
     .item-h2 {
         font-size: 15px;
         color: rebeccapurple;
+    }
+
+    .image {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .image:hover {
+        width: 200px;
+        height: 200px;
+    }
+
+    .image:active {
+        width: 220px;
+        height: 220px;
     }
 }

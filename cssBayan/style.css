@@ -17,9 +17,35 @@ html, body {
     margin: auto;
 }
 
+.list {
+    list-style-type: none;
+}
+
+.item {
+    background: yellowgreen;
+    border-bottom: 1px solid black;
+}
+
+.text-button-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.item:hover > .image-wrapper {
+    display: block;
+}
+
+.cross {
+    margin-top: 20px;
+}
+
 .cross {
     width: 20px;
     height: 20px;
+}
+
+.image-wrapper {
+    display: none;
 }
 
 .image {
